@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType = "centerCrop"
+        android:layout_height="65sp"
+        android:src="@drawable/food" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="▲▼▲▼▲▼  MENU  ▲▼▲▼▲▼"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="#DB4437" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="♥Pizza-----------------------------------------------------♥"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+
+
+        <ImageView
+            android:id="@+id/MP"
+            android:layout_weight="1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mixed"/>
+
+
+        <TextView
+
+            android:layout_weight="1"
+            android:text="Mixed Pizza(35tl) - Sousage,Wiener,
+            Sweet Corn,Pepper,Mushroom"
+            android:textSize="14sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="500px"
+            android:layout_height="match_parent"  />
+
+        <Button
+            android:id="@+id/MixedButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+
+        <Button
+            android:id="@+id/MixBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+
+        <ImageView
+            android:id="@+id/CP"
+            android:layout_weight="1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sefpizza"/>
+
+
+        <TextView
+
+            android:layout_weight="1"
+            android:text="Chef's Pizza(32tl) - Sousage,Wiener,
+            Ham,Tomatoes,Olive"
+            android:textSize="14sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="500px"
+            android:layout_height="match_parent"  />
+
+        <Button
+            android:id="@+id/ChefButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/ChesBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="1dp">
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="♥Burger---------------------------------------------------♥"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/ChicImg"
+            android:layout_weight="1"
+            android:text="P"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/chickenburger"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Chicken Burger(25tl) - Chicken,Onion,
+            Lettuce,Special Sausace,Potato"
+            android:textSize="14sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="500px"
+            android:layout_height="match_parent"  />
+
+        <Button
+            android:id="@+id/ChickenButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/ChicBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/TexImg"
+            android:layout_weight="1"
+            android:text="P"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/texasburger"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Texas Burger(30tl) - Bacon,Cheddar,
+            Meatball,Barbecue Sauce,Ham,Potato"
+            android:textSize="14sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="500px"
+            android:layout_height="match_parent"  />
+
+        <Button
+            android:id="@+id/TexasButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/TexBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="1dp">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="♥Pastry----------------------------------------------------♥"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/FettImg"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="P"
+            android:background="@drawable/makarna"/>
+
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Fettucini Pasta(27tl) - Mushroom,
+            Crema,Chicken,Basil"
+            android:textColor="#0a0a0a"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/PastaButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/PastaBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="1dp">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/RavioliImg"
+            android:layout_weight="1"
+            android:text="P"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/manti"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Turkish Ravioli(28tl) - Mince,Yoghurt,
+            Thyme,Buttered-Chili Pepper Souce"
+            android:textSize="14sp"
+            android:textColor="#0a0a0a"
+            android:layout_width="500px"
+            android:layout_height="match_parent"  />
+
+        <Button
+            android:id="@+id/RavioliButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/RavBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="1dp">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="♥Beverage-----------------------------------------------♥"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/CokeImg"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="P"
+            android:background="@drawable/coke"/>
+
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Coke(8tl) - 330ml"
+            android:textColor="#0a0a0a"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/CokeButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/CokeBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/WaterImg"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="P"
+            android:background="@drawable/water"/>
+
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Water(5tl) - 500ml"
+            android:textColor="#0a0a0a"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/WaterButton"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="add_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/WaterBut"
+            android:layout_weight="1"
+            android:text="Del"
+            android:onClick="del_to_list"
+            android:layout_width="150px"
+            android:background="@android:color/darker_gray"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="40dp">
+
+        <Button
+
+            android:onClick="placeOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Place Order"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>

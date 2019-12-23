@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Confirmation"
+    android:background="@color/colorBackground">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:layout_marginBottom="6dp"
+        android:text="Our waiter/waitress is coming"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#ce0b0b"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_marginBottom="125dp"
+        android:text="Thank you for your order♥"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#ce0b0b"
+        android:textSize="25sp" />
+
+    <Button
+
+        android:id="@+id/button2"
+        android:onClick="back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Back to Menu"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>
+
